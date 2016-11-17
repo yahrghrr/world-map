@@ -8,7 +8,7 @@ define(function (require) {
   require('plugins/world_map_vis/world_map_vis_controller');
 
   // register the provider with the visTypes registry
-  require('ui/registry/vis_types').register(WorldMapVisProvider);
+  require('ui/registry/vis_types').register(HealthMetricVisProvider);
 
   function HealthMetricVisProvider(Private) {
     const TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
