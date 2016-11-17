@@ -8,7 +8,7 @@ define(function (require) {
   require('plugins/world_map_vis/world_map_vis_controller');
 
   // register the provider with the visTypes registry
-  require('ui/registry/vis_types').register(HealthMetricVisProvider);
+  require('ui/registry/vis_types').register(WorldMapVisProvider);
 
   function HealthMetricVisProvider(Private) {
     const TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
@@ -17,9 +17,9 @@ define(function (require) {
     // return the visType object, which kibana will use to display and configure new
     // Vis object of this type.
     return new TemplateVisType({
-      name: 'health-metric',
-      title: 'Health Metric',
-      description: 'A numeric health metric, can show a number and color it accordingly.',
+      name: 'world-map',
+      title: 'World Map',
+      description: 'A World Map.',
       icon: 'fa-calculator',
       template: require('plugins/world_map_vis/world_map_vis.html'),
       params: {
