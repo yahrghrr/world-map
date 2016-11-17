@@ -1,8 +1,7 @@
-<div ng-controller="KbnHealthMetricVisController" class="health-metric-vis">
-    <div class="health-metric-container" ng-repeat="metric in metrics">
-        <img src="https://dl.dropboxusercontent.com/u/2548196/world-map.gif />
-        <!-- <div class="health-metric-value" ng-style="{'font-size': vis.params.fontSize+'pt', 'color': metric.color }"><a href="{{vis.params.URL}}" style="color: inherit;">{{metric.formattedValue}}</a></div>
-        <div>{{metric.label}}</div> -->
+<div ng-controller="KbnHealthMetricVisController" class="world-map-vis">
+    <div class="world-map-container" ng-repeat="metric in metrics">
+        <div class="world-map-value" ng-style="{'font-size': vis.params.fontSize+'pt', 'color': metric.color }"><a href="{{vis.params.URL}}" style="color: inherit;">{{metric.formattedValue}}</a></div>
+        <div>{{metric.label}}</div>
         <!-- <div><a href="{{vis.params.URL}}" style="color: inherit;">TEST</a></div>-->
     </div>
 </div>

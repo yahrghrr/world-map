@@ -2,10 +2,10 @@
 
 define(function (require) {
   // we need to load the css ourselves
-  require('plugins/health_metric_vis/health_metric_vis.less');
+  require('plugins/world_map_vis/world_map_vis.less');
 
   // we also need to load the controller and used by the template
-  require('plugins/health_metric_vis/health_metric_vis_controller');
+  require('plugins/world_map_vis/world_map_vis_controller');
 
   // register the provider with the visTypes registry
   require('ui/registry/vis_types').register(HealthMetricVisProvider);
@@ -21,7 +21,7 @@ define(function (require) {
       title: 'Health Metric',
       description: 'A numeric health metric, can show a number and color it accordingly.',
       icon: 'fa-calculator',
-      template: require('plugins/health_metric_vis/health_metric_vis.html'),
+      template: require('plugins/world_map_vis/world_map_vis.html'),
       params: {
         defaults: {
           handleNoResults: true,
@@ -33,7 +33,7 @@ define(function (require) {
           yellowColor: "#ffa500",
           greenColor: "#6dc066"
         },
-        editor: require('plugins/health_metric_vis/health_metric_vis_params.html')
+        editor: require('plugins/world_map_vis/world_map_vis_params.html')
       },
       schemas: new Schemas([
         {

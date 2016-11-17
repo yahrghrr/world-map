@@ -2,7 +2,7 @@
 
 define(function (require) {
   let _ = require('lodash');
-  const module = require('ui/modules').get('health_metric_vis');
+  const module = require('ui/modules').get('world_map_vis');
 
   module.controller('KbnHealthMetricVisController', function ($scope, Private) {
     const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
