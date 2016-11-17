@@ -8,9 +8,9 @@ define(function (require) {
   require('plugins/world_map_vis/world_map_vis_controller');
 
   // register the provider with the visTypes registry
-  require('ui/registry/vis_types').register(HealthMetricVisProvider);
+  require('ui/registry/vis_types').register(WorldMapVisProvider);
 
-  function HealthMetricVisProvider(Private) {
+  function WorldMapVisProvider(Private) {
     const TemplateVisType = Private(require('ui/template_vis_type/TemplateVisType'));
     const Schemas = Private(require('ui/Vis/Schemas'));
 
@@ -19,7 +19,7 @@ define(function (require) {
     return new TemplateVisType({
       name: 'world-map',
       title: 'World Map',
-      description: 'A World Map.',
+      description: 'A World Map for testing purposes',
       icon: 'fa-calculator',
       template: require('plugins/world_map_vis/world_map_vis.html'),
       params: {
@@ -51,5 +51,5 @@ define(function (require) {
   }
 
   // export the provider so that the visType can be required with Private()
-  return HealthMetricVisProvider;
+  return WorldMapVisProvider;
 });
