@@ -54,7 +54,7 @@ define(function (require) {
             label: column.title,
             formattedValue: formattedValue,
             color: color,
-            testValue: column.title
+            //testValue: column.title
           });
         });
       });
