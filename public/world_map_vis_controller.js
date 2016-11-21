@@ -4,7 +4,7 @@ define(function (require) {
   let _ = require('lodash');
   const module = require('ui/modules').get('world_map_vis');
   
-  let testValue2 = 500;
+  let $scope.testValue2 = 500;
   
   //module.controller('KbnWorldMapVisController', function ($scope, Private) {
   module.controller('KbnWorldMapVisController', function ($scope, Public) {
