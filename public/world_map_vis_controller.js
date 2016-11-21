@@ -42,7 +42,8 @@ define(function (require) {
       tableGroups.tables.forEach(function (table) {
         table.columns.forEach(function (column, i) {
           const fieldFormatter = table.aggConfig(column).fieldFormatter();
-          let value = table.rows[0][i];
+          //let value = table.rows[0][i];
+          let value = 200;
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
           
