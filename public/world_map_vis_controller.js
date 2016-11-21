@@ -46,10 +46,17 @@ define(function (require) {
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
           
+          let formattedValue2=2;
+          let formattedValue3=3;
+          let formattedValue4=4;
+          
           metrics.push({
             label: column.title,
             formattedValue: formattedValue,
-            color: color
+            color: color,
+            formattedValue2: formattedValue2,
+            formattedValue3: formattedValue3,
+            formattedValue4: formattedValue4
           });
         });
       });
