@@ -50,7 +50,8 @@ define(function (require) {
           metrics.push({
             label: column.title,
             formattedValue: formattedValue,
-            color: color
+            color: color,
+            testValue: testValue
           });
         });
       });
