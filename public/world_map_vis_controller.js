@@ -3,8 +3,11 @@
 define(function (require) {
   let _ = require('lodash');
   const module = require('ui/modules').get('world_map_vis');
-
-  module.controller('KbnWorldMapVisController', function ($scope, Private) {
+  
+  let testValue2 = 500;
+  
+  //module.controller('KbnWorldMapVisController', function ($scope, Private) {
+  module.controller('KbnWorldMapVisController', function ($scope, Public) {
     const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
 
     const metrics = $scope.metrics = [];
@@ -42,8 +45,7 @@ define(function (require) {
       tableGroups.tables.forEach(function (table) {
         table.columns.forEach(function (column, i) {
           const fieldFormatter = table.aggConfig(column).fieldFormatter();
-          //let value = table.rows[0][i];
-          let value = 200;
+          let value = table.rows[0][i];
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
           
