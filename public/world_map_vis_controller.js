@@ -52,11 +52,12 @@ define(function (require) {
           
           metrics.push({
             label: column.title,
-            formattedValue: formattedValue,
-            color: color,
-            formattedValue2: formattedValue2,
-            formattedValue3: formattedValue3,
-            formattedValue4: formattedValue4
+            //formattedValue: formattedValue,
+            formattedValue: 200,
+            color: color
+            //formattedValue2: formattedValue2,
+            //formattedValue3: formattedValue3,
+            //formattedValue4: formattedValue4
           });
         });
       });
