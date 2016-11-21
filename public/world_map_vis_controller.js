@@ -4,7 +4,7 @@ define(function (require) {
   let _ = require('lodash');
   const module = require('ui/modules').get('world_map_vis');
   
-  let formattedValue2 = 500;
+  //let formattedValue2 = 500;
 
   module.controller('KbnWorldMapVisController', function ($scope, Private) {
     const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
