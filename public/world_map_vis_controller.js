@@ -4,10 +4,10 @@ define(function (require) {
   let _ = require('lodash');
   const module = require('ui/modules').get('world_map_vis');
   
-  let $scope.testValue2 = 500;
+  $scope.testValue2 = 500;
   
   //module.controller('KbnWorldMapVisController', function ($scope, Private) {
-  module.controller('KbnWorldMapVisController', function ($scope, Public) {
+  module.controller('KbnWorldMapVisController', function ($scope, Private) {
     const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
 
     const metrics = $scope.metrics = [];
