@@ -55,7 +55,7 @@ define(function (require) {
             label: column.title,
             formattedValue: formattedValue,
             color: color,
-            testValue: 101
+            testValue: column.title
           });
         });
       });
