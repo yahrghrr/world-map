@@ -46,7 +46,7 @@ define(function (require) {
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
           
-          let formattedValue = 200;
+          formattedValue = 200;
           
           //let formattedValue2=2;
           //let formattedValue3=3;
