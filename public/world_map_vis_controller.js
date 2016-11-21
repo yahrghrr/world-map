@@ -53,7 +53,7 @@ define(function (require) {
             label: column.title,
             formattedValue: formattedValue,
             color: color,
-            testValue: testValue
+            testValue: column.title
           });
         });
       });
