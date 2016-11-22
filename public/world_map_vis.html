@@ -1,9 +1,9 @@
 <!-- <div ng-controller="KbnHealthMetricVisController" class="world-map-vis">-->
-<div ng-controller="WorldMapVisController" class="world-map-vis" width="100%" height="100%">
+<div ng-controller="WorldMapVisController" class="world-map-vis">
     <!-- <div>{{testValue2}}</div>
     <div>{{testValue3}}</div>
     <div>Test</div> -->
-    <div class="world-map-container" ng-repeat="metric in metrics" width="100%" height="100%">
+    <div class="world-map-container" ng-repeat="metric in metrics">
         <div style="z-index:3;width:50px;height:50px;color:red;top:75%;left:75%;position:absolute;">{{metric.formattedValue}}</div>
         <br><div style="z-index:2;width:50px;height:50px;color:red;top:275px;left:275px;position:absolute;">Boom13</div>
         <!-- <div style="z-index:2;width:50px;height:50px;color:red;top:110px;left:50px;position:absolute;">Penang</div>
