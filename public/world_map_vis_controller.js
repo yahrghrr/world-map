@@ -5,11 +5,11 @@ define(function (require) {
   const module = require('ui/modules').get('world_map_vis');
   
   //module.controller('KbnWorldMapVisController', function ($scope, Private) {
-  module.controller('KbnWorldMapVisController', function ($scope, Private) {
+  module.controller('KbnWorldMapVisController', function ($scope) {
     const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
     
     $scope.testValue2 = 500;
-    const metrics = $scope.metrics = [];
+    metrics = $scope.metrics = [];
 
     function isInvalid(val) {
       return _.isUndefined(val) || _.isNull(val) || _.isNaN(val);
