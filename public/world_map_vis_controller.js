@@ -2,10 +2,12 @@
 
 define(function (require) {
   let _ = require('lodash');
-  const module = require('ui/modules').get('world_map_vis');
+  //const module = require('ui/modules').get('world_map_vis');      
+  var module = require('ui/modules').get('world_map_vis');     
   
   //module.controller('KbnWorldMapVisController', function ($scope, Private) {
-  module.controller('KbnWorldMapVisController', function ($scope) {
+  //module.controller('KbnWorldMapVisController', function ($scope) {
+  module.controller('WorldMapVisController', function ($scope,Private) {            //necessary
     const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
     
     $scope.testValue2 = 500;
