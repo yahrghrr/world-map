@@ -11,6 +11,8 @@ define(function (require) {
     const tabifyAggResponse = Private(require('ui/agg_response/tabify/tabify'));
     
     $scope.testValue2 = 500;
+    $scope.testValue3 = 300;
+    
     metrics = $scope.metrics = [];
 
     function isInvalid(val) {
@@ -46,7 +48,7 @@ define(function (require) {
       tableGroups.tables.forEach(function (table) {
         table.columns.forEach(function (column, i) {
           const fieldFormatter = table.aggConfig(column).fieldFormatter();
-          let value = table.rows[0][0];
+          let value = table.rows[0][i];
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
           
@@ -54,6 +56,7 @@ define(function (require) {
             label: column.title,
             formattedValue: formattedValue,
             color: color,
+            testValue3: $scope.testValue3
           });
         });
       });
