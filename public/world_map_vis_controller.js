@@ -48,14 +48,10 @@ define(function (require) {
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
           
-          let value2 = table.rows[0][i+1];
-          let testValue = isInvalid(value) ? '?' : fieldFormatter(value2);
-          
           metrics.push({
             label: column.title,
             formattedValue: formattedValue,
             color: color,
-            testValue: column.title
           });
         });
       });
