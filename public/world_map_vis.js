@@ -45,6 +45,14 @@ define(function (require) {
           defaults: [
             { type: 'count', schema: 'metric' }
           ]
+        },
+        {
+          group: 'buckets',
+          name: 'tags',
+          title: 'Tags',
+          min: 1,
+          max: 1,
+          aggFilter: '!geohash_grid'
         }
       ])
     });
