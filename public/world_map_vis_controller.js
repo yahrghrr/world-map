@@ -73,7 +73,7 @@ define(function (require) {
           if (angular.equals(table.rows[0][0],"San Francisco"))
           {
               $scope.testValue2 = table.rows[0][1];
-              $scope.valueColor = "green";
+              //$scope.valueColor = "green";
           }
           //end test code
           
