@@ -12,10 +12,19 @@ define(function (require) {
     
     $scope.testValue2 = 500;
     $scope.testValue3 = 300;
+    
     $scope.statePenang = "Penang";
     $scope.statePahang = "Pahang";
     $scope.statePerlis = "Perlis";
-    
+    $scope.statePerak = "Perak";
+    $scope.stateSelangor = "Selangor";
+    $scope.stateKL = "KL";
+    $scope.stateJohor = "Johor";
+    $scope.stateTerengganu = "Terengganu";
+    $scope.stateKelantan = "Kelantan";
+    $scope.stateSarawak = "Sarawak";
+    $scope.stateSabah = "Sabah";
+
     metrics = $scope.metrics = [];
 
     function isInvalid(val) {
