@@ -70,7 +70,7 @@ define(function (require) {
           //$scope.statePerlis = table.rows[0][i];
           
           //test code
-          if (table.rows[0][0])=="San Francisco")
+          if (angular.equals(table.rows[0][0],"San Francisco"))
           {
               $scope.testValue2 = table.rows[0][1];
               $scope.valueColor = "#FF0000";
