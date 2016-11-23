@@ -12,7 +12,7 @@ define(function (require) {
     
     $scope.testValue2 = 500;
     $scope.testValue3 = 300;
-    $scope.valueColor = "#000000";
+    $scope.valueColor = "green";
     
     $scope.statePenang = "Penang";
     $scope.statePahang = "Pahang";
