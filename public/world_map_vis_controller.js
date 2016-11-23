@@ -24,6 +24,7 @@ define(function (require) {
     $scope.stateKelantan = "Kelantan";
     $scope.stateSarawak = "Sarawak";
     $scope.stateSabah = "Sabah";
+    $scope.stateMelaka = "Melaka";
 
     metrics = $scope.metrics = [];
 
