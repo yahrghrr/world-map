@@ -12,8 +12,8 @@ define(function (require) {
     
     $scope.testValue2 = 500;
     $scope.testValue3 = 300;
-    $scope.statePenang = 100;
-    $scope.statePahang = 100;
+    $scope.statePenang = "Penang";
+    $scope.statePahang = "Pahang";
     
     metrics = $scope.metrics = [];
 
