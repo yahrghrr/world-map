@@ -12,6 +12,7 @@ define(function (require) {
     
     $scope.testValue2 = 500;
     $scope.testValue3 = 300;
+    $scope.valueColor = "#000000";
     
     $scope.statePenang = "Penang";
     $scope.statePahang = "Pahang";
@@ -67,6 +68,14 @@ define(function (require) {
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
           //$scope.statePerlis = table.rows[0][i];
+          
+          //test code
+          if (table.rows[0][0])=="San Francisco")
+          {
+              $scope.testValue2 = table.rows[0][1];
+              $scope.valueColor = "#FF0000";
+          }
+          //end test code
           
           metrics.push({
             label: column.title,
