@@ -2,13 +2,13 @@
 <div ng-controller="WorldMapVisController" class="world-map-vis">
     <div style="z-index:2">{{testValue2}}</div>
     <div style="z-index:2">{{testValue3}}</div>
-    <div class="world-map-values">{{metric.statePenang}}</div>
+    <div class="world-map-values">{{metric.statePenang}}</div><br />
     <div class="world-map-values">{{statePenang}}</div>
     <!-- <div>Test</div> -->
     <img src="https://dl.dropboxusercontent.com/u/2548196/malaysianmap.png" width="100%" height="100%" style="z-index:1;position:absolute;" />
     <div class="world-map-container" ng-repeat="metric in metrics" style="z-index:2">
         <div style="z-index:4;width:50px;height:50px;color:red;top:75%;left:75%;position:absolute;">{{metric.formattedValue}}</div>
-        <br><div style="z-index:3;width:50px;height:50px;color:red;top:275px;left:275px;position:absolute;">Boom15</div>
+        <br><div style="z-index:3;width:50px;height:50px;color:red;top:275px;left:275px;position:absolute;">Boom16</div>
         <!-- <div style="z-index:2;width:50px;height:50px;color:red;top:110px;left:50px;position:absolute;">P<enang</div>
         <div style="z-index:2;width:50px;height:50px;color:red;top:200px;left:150px;position:absolute;">Pahang</div>-->
         <!-- <div class="world-map-value" ng-style="{'font-size': vis.params.fontSize+'pt', 'color': metric.color }"><a href="{{vis.params.URL}}" style="color: inherit;">{{metric.formattedValue}}</a></div>
