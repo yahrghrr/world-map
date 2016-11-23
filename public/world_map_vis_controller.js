@@ -12,6 +12,8 @@ define(function (require) {
     
     $scope.testValue2 = 500;
     $scope.testValue3 = 300;
+    $scope.statePenang = 100;
+    $scope.statePahang = 100;
     
     metrics = $scope.metrics = [];
 
@@ -56,7 +58,9 @@ define(function (require) {
             label: column.title,
             formattedValue: formattedValue,
             color: color,
-            testValue3: $scope.testValue3
+            testValue3: $scope.testValue3,
+            statePenang: $scope.statePenang,
+            statePahang: $scope.statePahang
           });
         });
       });
