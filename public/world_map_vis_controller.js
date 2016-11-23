@@ -14,6 +14,7 @@ define(function (require) {
     $scope.testValue3 = 300;
     $scope.statePenang = "Penang";
     $scope.statePahang = "Pahang";
+    $scope.statePerlis = "Perlis";
     
     metrics = $scope.metrics = [];
 
@@ -53,6 +54,7 @@ define(function (require) {
           let value = table.rows[0][i];
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
+          $scope.statePerlis = table.rows[0][i];
           
           metrics.push({
             label: column.title,
