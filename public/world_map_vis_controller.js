@@ -12,7 +12,7 @@ define(function (require) {
     
     $scope.testValue2 = 500;
     $scope.testValue3 = 300;
-    $scope.valueColor = "green";
+    $scope.valueColor = "red";
     
     $scope.statePenang = "Penang";
     $scope.statePahang = "Pahang";
@@ -73,7 +73,7 @@ define(function (require) {
           if (angular.equals(table.rows[0][0],"San Francisco"))
           {
               $scope.testValue2 = table.rows[0][1];
-              $scope.valueColor = "#FF0000";
+              $scope.valueColor = "green";
           }
           //end test code
           
