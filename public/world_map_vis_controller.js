@@ -63,7 +63,7 @@ define(function (require) {
           let value = table.rows[0][i];
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
           let color = getColor(value, $scope.vis.params);
-          $scope.statePerlis = table.rows[0][i];
+          //$scope.statePerlis = table.rows[0][i];
           
           metrics.push({
             label: column.title,
