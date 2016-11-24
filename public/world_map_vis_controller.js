@@ -70,11 +70,11 @@ define(function (require) {
           //$scope.statePerlis = table.rows[0][i];
           
           //test code
-          if (!angular.equals(table.rows[0][0],"x"))
+          /*if (!angular.equals(table.rows[0][0],"x"))
           {
               $scope.testValue2 = table.rows[0][1];
               $scope.valueColor = "green";
-          }
+          }*/
           //end test code
           
           metrics.push({
