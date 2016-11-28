@@ -80,14 +80,13 @@ define(function (require) {
           }*/
           //end test code
           
-          //prod code
-          /*
+          //prod code    
           if (angular.equals(table.rows[0][i],"Penang"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
+              $scope.iconGreen = $scope.iconRed
           }
-          */
           //end prod code
           
           metrics.push({
