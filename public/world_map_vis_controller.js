@@ -85,7 +85,7 @@ define(function (require) {
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
-              $scope.iconGreen = $scope.iconRed
+              $scope.iconGreen = $scope.iconRed;
           }
           //end prod code
           
