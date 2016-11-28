@@ -14,6 +14,9 @@ define(function (require) {
     $scope.testValue3 = 300;
     $scope.valueColor = "red";
     
+    $scope.iconRed = "https://dl.dropboxusercontent.com/u/2548196/red.gif";
+    $scope.iconGreen = "https://dl.dropboxusercontent.com/u/2548196/green.gif";
+    
     $scope.statePenang = "Penang";
     $scope.statePahang = "Pahang";
     $scope.statePerlis = "Perlis";
@@ -76,6 +79,16 @@ define(function (require) {
               $scope.valueColor = "green";
           }*/
           //end test code
+          
+          //prod code
+          /*
+          if (angular.equals(table.rows[0][i],"Penang"))
+          {
+              //$scope.testValue2 = table.rows[0][1];
+              //$scope.valueColor = "green";
+          }
+          */
+          //end prod code
           
           metrics.push({
             label: column.title,
