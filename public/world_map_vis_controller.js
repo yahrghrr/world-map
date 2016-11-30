@@ -92,6 +92,12 @@ define(function (require) {
         
           var x = 0;
           var y = 0;
+        
+          if (table.rows.length < 1)
+          {
+            $scope.testValue2 = "blank";
+            $scope.testValue3 = "blank";
+          }
           
           if (table.rows.length > 0){
             /*while (x < table.rows.length)
