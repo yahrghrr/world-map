@@ -27,7 +27,7 @@ define(function (require) {
     $scope.stateSelangor = "Selangor";
     $scope.stateKL = "KL";
     $scope.stateJohor = "Johor";
-    $scope.stateTerengganu = "Terengganu";
+    $scope.stateTerengganu = $scope.iconGreen;
     $scope.stateKelantan = "Kelantan";
     $scope.stateSarawak = "Sarawak";
     $scope.stateSabah = "Sabah";
@@ -84,11 +84,18 @@ define(function (require) {
           //end test code
           
           //prod code    
-          if (!angular.equals(table.rows[0][i],"Penang"))
+          if (!angular.equals(table.rows[0][i],"Pahang"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
               $scope.statePahang = $scope.iconRed;
+          }
+          
+          if (!angular.equals(table.rows[0][i],"Terengganu"))
+          {
+              //$scope.testValue2 = table.rows[0][1];
+              //$scope.valueColor = "green";
+              $scope.stateTerengganu = $scope.iconRed;
           }
           //end prod code
           
