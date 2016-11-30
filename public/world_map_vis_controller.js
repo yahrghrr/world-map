@@ -89,7 +89,7 @@ define(function (require) {
           //$scope.testValue2 = table.rows[0][0];
           //$scope.testValue3 = table.rows[1][0];
           $scope.testValue2 = table.rows[0].length;
-          $scope.testValue3 = table.rows[1].length;
+          $scope.testValue3 = table.rows.length;
           //end test code
           
           //prod code    
