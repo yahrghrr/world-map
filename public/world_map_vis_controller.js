@@ -66,6 +66,12 @@ define(function (require) {
     }
 
     $scope.processTableGroups = function (tableGroups) {
+      if (tableGroups.tables == null)
+          {
+            $scope.testValue2 = "blank";
+            $scope.testValue3 = "blank";
+          }
+      
       tableGroups.tables.forEach(function (table) {
         //table.columns.forEach(function (column, i) {
           /* const fieldFormatter = table.aggConfig(column).fieldFormatter();
@@ -92,12 +98,6 @@ define(function (require) {
         
           var x = 0;
           var y = 0;
-        
-          if (table.rows.length < 1)
-          {
-            $scope.testValue2 = "blank";
-            $scope.testValue3 = "blank";
-          }
           
           if (table.rows.length > 0){
             /*while (x < table.rows.length)
