@@ -68,11 +68,10 @@ define(function (require) {
     $scope.processTableGroups = function (tableGroups) {
       tableGroups.tables.forEach(function (table) {
         table.columns.forEach(function (column, i) {
-          const fieldFormatter = table.aggConfig(column).fieldFormatter();
+          /* const fieldFormatter = table.aggConfig(column).fieldFormatter();
           let value = table.rows[0][i];
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
-          let color = getColor(value, $scope.vis.params);
-          //$scope.statePerlis = table.rows[0][i];
+          let color = getColor(value, $scope.vis.params);*/
           
           //test code
           /*if (!angular.equals(table.rows[0][0],"x"))
