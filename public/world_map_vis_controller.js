@@ -18,16 +18,15 @@ define(function (require) {
     $scope.iconGreen = "https://dl.dropboxusercontent.com/u/2548196/green.png";
     $scope.iconStatus = $scope.iconGreen;
     
-    $scope.statePenang = "Penang";
-    //$scope.statePahang = "Pahang";
+    $scope.stateTerengganu = $scope.iconGreen;
+    $scope.statePenang = $scope.iconGreen;
     $scope.statePahang = $scope.iconGreen;
+    $scope.statePerlis = $scope.iconGreen;
     
-    $scope.statePerlis = "Perlis";
     $scope.statePerak = "Perak";
     $scope.stateSelangor = "Selangor";
     $scope.stateKL = "KL";
     $scope.stateJohor = "Johor";
-    $scope.stateTerengganu = $scope.iconGreen;
     $scope.stateKelantan = "Kelantan";
     $scope.stateSarawak = "Sarawak";
     $scope.stateSabah = "Sabah";
