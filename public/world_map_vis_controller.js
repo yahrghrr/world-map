@@ -83,7 +83,7 @@ define(function (require) {
           //end test code
           
           //test code
-          $scope.testValue2 = table.rows[1][i];
+          $scope.testValue2 = table.rows[column][i];
           $scope.testValue3 = "N" + i;
           //end test code
           
