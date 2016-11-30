@@ -113,17 +113,135 @@ define(function (require) {
                 //$scope.testValue2 = table.rows[x][0];
                 //$scope.testValue3 = table.rows[x][1];
                 
-                if (angular.equals(table.rows[x][0],"Los Angeles"))
+                if (angular.equals(table.rows[x][0],"Pahang"))
                 {
                     //$scope.testValue2 = table.rows[0][1];
                     //$scope.valueColor = "green";
                     //$scope.statePahang = $scope.iconRed;
+                    if(table.rows[x][1] < 95){
+                      $scope.statePahang = $scope.iconRed;
+                    }else{
+                      $scope.statePahang = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Penang"))
+                {
                     if(table.rows[x][1] < 95){
                       $scope.statePenang = $scope.iconRed;
                     }else{
                       $scope.statePenang = $scope.iconGreen;
                     }
                 }
+                
+                if (angular.equals(table.rows[x][0],"Johor"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateJohor = $scope.iconRed;
+                    }else{
+                      $scope.stateJohor = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Kedah"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateKedah = $scope.iconRed;
+                    }else{
+                      $scope.stateKedah = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Kelantan"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateKelantan = $scope.iconRed;
+                    }else{
+                      $scope.stateKelantan = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Kuala Lumpur"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateKL = $scope.iconRed;
+                    }else{
+                      $scope.stateKL = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Putrajaya"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateKL = $scope.iconRed;
+                    }else{
+                      $scope.stateKL = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Langkawi"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateKedah = $scope.iconRed;
+                    }else{
+                      $scope.stateKedah = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Melaka"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateMelaka = $scope.iconRed;
+                    }else{
+                      $scope.stateMelaka = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Negeri Sembilan"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateNegeriSembilan = $scope.iconRed;
+                    }else{
+                      $scope.stateNegeriSembilan = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Perak"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.statePerak = $scope.iconRed;
+                    }else{
+                      $scope.statePerak = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Sabah"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateSabah = $scope.iconRed;
+                    }else{
+                      $scope.stateSabah = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Sarawak"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateSarawak = $scope.iconRed;
+                    }else{
+                      $scope.stateSarawak = $scope.iconGreen;
+                    }
+                }
+                
+                if (angular.equals(table.rows[x][0],"Terengganu"))
+                {
+                    if(table.rows[x][1] < 95){
+                      $scope.stateTerengganu = $scope.iconRed;
+                    }else{
+                      $scope.stateTerengganu = $scope.iconGreen;
+                    }
+                }
+                
               }
             }
           }
