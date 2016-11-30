@@ -118,7 +118,7 @@ define(function (require) {
                     //$scope.testValue2 = table.rows[0][1];
                     //$scope.valueColor = "green";
                     $scope.statePahang = $scope.iconRed;
-                    if(table.rows[x][1] > 1){
+                    if(table.rows[x][1] > 105){
                       $scope.statePenang = $scope.iconRed;
                     }
                 }
