@@ -85,7 +85,7 @@ define(function (require) {
           //test code
           //$scope.testValue2 = table.rows[column][i];
           $scope.testValue2 = table.rows[0][i];
-          $scope.testValue3 = column.title;
+          $scope.testValue3 = table.rows[1][i];
           //end test code
           
           //prod code    
