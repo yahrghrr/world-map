@@ -21,12 +21,12 @@ define(function (require) {
     $scope.stateTerengganu = $scope.iconGreen;
     $scope.statePenang = $scope.iconGreen;
     $scope.statePahang = $scope.iconGreen;
-    $scope.statePerlis = $scope.iconGreen;
-    
-    $scope.statePerak = "Perak";
-    $scope.stateSelangor = "Selangor";
-    $scope.stateKL = "KL";
-    $scope.stateJohor = "Johor";
+    $scope.statePerlis = $scope.iconGreen; 
+    $scope.statePerak = $scope.iconGreen;
+    $scope.stateSelangor = $scope.iconGreen;
+    $scope.stateKL = $scope.iconGreen;
+    $scope.stateJohor = $scope.iconGreen;
+   
     $scope.stateKelantan = "Kelantan";
     $scope.stateSarawak = "Sarawak";
     $scope.stateSabah = "Sabah";
