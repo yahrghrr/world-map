@@ -16,6 +16,7 @@ define(function (require) {
     
     $scope.iconRed = "https://dl.dropboxusercontent.com/u/2548196/red.png";
     $scope.iconGreen = "https://dl.dropboxusercontent.com/u/2548196/green.png";
+    $scope.iconStatus = $scope.iconGreen;
     
     $scope.statePenang = "Penang";
     $scope.statePahang = "Pahang";
@@ -85,7 +86,7 @@ define(function (require) {
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
-              $scope.iconGreen = $scope.iconRed;
+              $scope.iconStatus = $scope.iconRed;
           }
           //end prod code
           
