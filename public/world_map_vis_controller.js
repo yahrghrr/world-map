@@ -83,28 +83,28 @@ define(function (require) {
           //end test code
           
           //prod code    
-          if (angular.equals(table.rows[0][i],"Los Angeles"))
+          if (angular.equals(table.rows[i][0],"Los Angeles"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
               $scope.statePahang = $scope.iconRed;
           }
           
-          if (angular.equals(table.rows[0][i],"London"))
+          if (angular.equals(table.rows[i][0],"London"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
               $scope.stateTerengganu = $scope.iconRed;
           }
           
-          if (angular.equals(table.rows[0][i],"San Francisco"))
+          if (angular.equals(table.rows[i][0],"San Francisco"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
               $scope.stateJohor = $scope.iconRed;
           }
           
-          if (angular.equals(table.rows[0][i],"New York"))
+          if (angular.equals(table.rows[i][0],"New York"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
