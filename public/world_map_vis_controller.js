@@ -26,12 +26,14 @@ define(function (require) {
     $scope.stateSelangor = $scope.iconGreen;
     $scope.stateKL = $scope.iconGreen;
     $scope.stateJohor = $scope.iconGreen;
+    $scope.stateMelaka = $scope.iconGreen;
+    $scope.stateKedah = $scope.iconGreen;
+    $scope.stateSarawak = $scope.iconGreen;
+    $scope.stateSabah = $scope.iconGreen;
+    $scope.stateKelantan = $scope.iconGreen;
+    
+    
    
-    $scope.stateKelantan = "Kelantan";
-    $scope.stateSarawak = "Sarawak";
-    $scope.stateSabah = "Sabah";
-    $scope.stateMelaka = "Melaka";
-    $scope.stateKedah = "Kedah";
     $scope.stateNegeriSembilan = "Negeri Sembilan";
 
     metrics = $scope.metrics = [];
