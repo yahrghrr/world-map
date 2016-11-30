@@ -67,7 +67,7 @@ define(function (require) {
 
     $scope.processTableGroups = function (tableGroups) {
       tableGroups.tables.forEach(function (table) {
-        table.columns.forEach(function (column, i) {
+        //table.columns.forEach(function (column, i) {
           /* const fieldFormatter = table.aggConfig(column).fieldFormatter();
           let value = table.rows[0][i];
           let formattedValue = isInvalid(value) ? '?' : fieldFormatter(value);
@@ -87,8 +87,21 @@ define(function (require) {
           //$scope.testValue3 = table.rows[1][i];
           //$scope.testValue2 = table.rows[0][0];
           //$scope.testValue3 = table.rows[1][0];
-          $scope.testValue2 = table.rows[0].length;
-          $scope.testValue3 = table.rows.length;
+          //$scope.testValue2 = table.rows[0].length;
+          //$scope.testValue3 = table.rows.length;
+        
+          var x = 0;
+          var y = 0;
+          
+          if (table.rows.length > 0){
+            while (x < table.rows.length)
+            {
+              $scope.testValue2 = table.rows[x][1];
+              x++;
+            }
+          }
+          
+                 
           //end test code
           
           //prod code    
@@ -131,7 +144,7 @@ define(function (require) {
             statePenang: $scope.statePenang,
             statePahang: $scope.statePahang
           });
-        });
+        //});
       });
     };
 
