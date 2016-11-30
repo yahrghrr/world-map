@@ -31,10 +31,8 @@ define(function (require) {
     $scope.stateSarawak = $scope.iconGreen;
     $scope.stateSabah = $scope.iconGreen;
     $scope.stateKelantan = $scope.iconGreen;
+    $scope.stateNegeriSembilan = $scope.iconGreen;
     
-    
-   
-    $scope.stateNegeriSembilan = "Negeri Sembilan";
 
     metrics = $scope.metrics = [];
 
