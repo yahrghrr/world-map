@@ -19,7 +19,9 @@ define(function (require) {
     $scope.iconStatus = $scope.iconGreen;
     
     $scope.statePenang = "Penang";
-    $scope.statePahang = "Pahang";
+    //$scope.statePahang = "Pahang";
+    $scope.statePahang = $scope.iconGreen;
+    
     $scope.statePerlis = "Perlis";
     $scope.statePerak = "Perak";
     $scope.stateSelangor = "Selangor";
@@ -86,7 +88,7 @@ define(function (require) {
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
-              $scope.iconStatus = $scope.iconRed;
+              $scope.statePahang = $scope.iconRed;
           }
           //end prod code
           
