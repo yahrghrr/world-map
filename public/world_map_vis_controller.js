@@ -109,8 +109,15 @@ define(function (require) {
             {
               if (table.rows[x].length>1)
               {
-                $scope.testValue2 = table.rows[x][0];
-                $scope.testValue3 = table.rows[x][1];
+                //$scope.testValue2 = table.rows[x][0];
+                //$scope.testValue3 = table.rows[x][1];
+                
+                if (angular.equals(table.rows[x][0],"Los Angeles"))
+                {
+                    //$scope.testValue2 = table.rows[0][1];
+                    //$scope.valueColor = "green";
+                    $scope.statePahang = $scope.iconRed;
+                }
               }
             }
           }
