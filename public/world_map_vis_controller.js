@@ -94,10 +94,18 @@ define(function (require) {
           var y = 0;
           
           if (table.rows.length > 0){
-            while (x < table.rows.length)
+            /*while (x < table.rows.length)
             {
               $scope.testValue2 = table.rows[x][1];
               x++;
+            }*/
+            for(x=0;x<table.rows.length;x++)
+            {
+              if (table.rows[x].length>1)
+              {
+                $scope.testValue2 = table.rows[x][0];
+                $scope.testValue3 = table.rows[x][1];
+              }
             }
           }
           
