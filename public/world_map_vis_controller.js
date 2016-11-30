@@ -83,14 +83,14 @@ define(function (require) {
           //end test code
           
           //prod code    
-          if (!angular.equals(table.rows[0][i],"Pahang"))
+          if (angular.equals(table.rows[0][i],"Los Angeles"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
               $scope.statePahang = $scope.iconRed;
           }
           
-          if (!angular.equals(table.rows[0][i],"Terengganu"))
+          if (angular.equals(table.rows[0][i],"London"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
@@ -104,7 +104,7 @@ define(function (require) {
               $scope.stateJohor = $scope.iconRed;
           }
           
-          if (angular.equals(table.rows[0][i],"London"))
+          if (angular.equals(table.rows[0][i],"New York"))
           {
               //$scope.testValue2 = table.rows[0][1];
               //$scope.valueColor = "green";
