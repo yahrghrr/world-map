@@ -82,7 +82,13 @@ define(function (require) {
           }*/
           //end test code
           
+          //test code
+          $scope.testValue2 = "M" + column;
+          $scope.testValue3 = "N" + i;
+          //end test code
+          
           //prod code    
+          /*
           if (angular.equals(table.rows[i][0],"Los Angeles"))
           {
               //$scope.testValue2 = table.rows[0][1];
@@ -110,6 +116,7 @@ define(function (require) {
               //$scope.valueColor = "green";
               $scope.stateSarawak = $scope.iconRed;
           }
+          */
           //end prod code
           
           metrics.push({
