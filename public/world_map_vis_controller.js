@@ -14,8 +14,8 @@ define(function (require) {
     $scope.testValue3 = 300;
     $scope.valueColor = "red";
     
-    $scope.iconRed = "https://dl.dropboxusercontent.com/u/2548196/red.gif";
-    $scope.iconGreen = "https://dl.dropboxusercontent.com/u/2548196/green.gif";
+    $scope.iconRed = "https://dl.dropboxusercontent.com/u/2548196/red.png";
+    $scope.iconGreen = "https://dl.dropboxusercontent.com/u/2548196/green.png";
     
     $scope.statePenang = "Penang";
     $scope.statePahang = "Pahang";
