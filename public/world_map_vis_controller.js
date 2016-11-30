@@ -70,6 +70,7 @@ define(function (require) {
           {
             $scope.testValue2 = "blank";
             $scope.testValue3 = "blank";
+            $scope.statePahang = $scope.iconGreen;
           }
       
       tableGroups.tables.forEach(function (table) {
