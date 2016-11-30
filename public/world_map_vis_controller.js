@@ -96,6 +96,20 @@ define(function (require) {
               //$scope.valueColor = "green";
               $scope.stateTerengganu = $scope.iconRed;
           }
+          
+          if (angular.equals(table.rows[0][i],"San Francisco"))
+          {
+              //$scope.testValue2 = table.rows[0][1];
+              //$scope.valueColor = "green";
+              $scope.stateJohor = $scope.iconRed;
+          }
+          
+          if (angular.equals(table.rows[0][i],"London"))
+          {
+              //$scope.testValue2 = table.rows[0][1];
+              //$scope.valueColor = "green";
+              $scope.stateSarawak = $scope.iconRed;
+          }
           //end prod code
           
           metrics.push({
