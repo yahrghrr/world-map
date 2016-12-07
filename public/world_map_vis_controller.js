@@ -282,7 +282,7 @@ define(function (require) {
           //end prod code
           
           metrics.push({
-            label: column.title,
+            //label: column.title,
             formattedValue: formattedValue,
             color: color,
             testValue3: $scope.testValue3,
